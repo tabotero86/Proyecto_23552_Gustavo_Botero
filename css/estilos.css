@@ -1,0 +1,401 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Shavian&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    .header_section1{
+    
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        background-color: rgb(53, 58, 64);
+        color: beige;
+        align-items:center;
+        font-family: 'Noto Sans Shavian', sans-serif;
+    
+        .header_section1_div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 100px;
+    
+            .header_section1_div_a{
+    
+                .header_section1_div_a_img{
+                    width: 120px;
+                }
+            }
+    
+            .header_section1_div_h2{
+    
+                font-weight: 200;
+            }
+    
+            .header_section1_div_nav{
+    
+                .header_section1_div_nav_ul{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap; 
+                    margin-right: 100px; 
+    
+                    .header_section1_div_nav_ul_li{
+                        list-style: none;  
+                        margin: 15px;
+                        text-align: right;
+                        font-size: 1rem;                 
+
+                        .linkNav{
+                            text-decoration: none;
+                        }
+                    
+                        .header_section1_div_nav_ul_li_a_blanco{
+                            color: white;
+                        }
+                    
+                        .header_section1_div_nav_ul_li_a_gris{
+                            color: rgb(155, 151, 140)
+                        }
+                    
+                        .header_section1_div_nav_ul_li_a_verde{
+                            color: rgb(37, 163, 66);
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+
+    .header_section2{
+        height: 85vh;
+        background-image: linear-gradient(to right, #00000097,#00000097), url("../assets/img/ba1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;    
+        text-align: right;
+        padding-top: 30vh;
+        font-family: 'Noto Sans Shavian', sans-serif;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: end;
+
+        .header_section2_h1{            
+            font-size: 2.2rem;
+            font-weight:500;
+            margin-right: 110px;
+        }
+
+        .header_section2_p{
+            width: 42%;            
+            font-size: 1.05rem;
+            line-height: 1.8;
+            font-family: 'Noto Sans Shavian', sans-serif;
+            margin-right: 110px;
+        }
+
+        .header_section2_div{
+
+            margin-top: 25px;
+            .header_section2_div_a_botonConf{
+                color: white;
+                text-decoration: none;
+                margin: 15px;
+                border:solid thin white;
+                border-radius: 5px;
+                padding: 8px 12px;
+            }
+
+            .header_section2_div_a_botonConf_verde{
+                color: white;
+                text-decoration: none;
+                background-color: rgb(39, 168, 68);
+                margin-right: 110px;
+                border-radius: 5px;
+                padding: 8px 12px; 
+            }
+        }
+    }
+}
+
+.oradores{
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Noto Sans Shavian', sans-serif;
+
+    .oradores_h2{
+        margin-top: 20px;
+        font-size: 2rem;
+    
+        .oradores_h2_chico{
+            font-size: 1rem;
+        }
+    }
+
+    .oradores_tarjetas{
+        background-color: white;
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 5px;
+        width: 30%;
+        height: 80%;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;        
+        margin-right: 20px;
+        margin-top: 20px;
+        text-align:justify;
+        font-size: 0.9rem;
+    
+        .oradores_tarjetas_img{
+            width: 100%;
+            height: 60%;
+            border-radius: 5px 5px 0 0;
+            object-fit: cover;
+        }
+    
+        .oradores_tarjetas_cuerpoTarjeta{
+            margin-top: 50px;
+            margin: 10px;
+            font-family: 'Noto Sans Shavian', sans-serif;
+            font-size: 0.75rem;
+
+            .oradores_tarjetas_cuerpoTarjeta_h4{
+                display: inline-block;
+                border-radius: 5PX;
+                margin-right: 5PX;
+                padding: 0 5px;                
+            }
+    
+            .tituloNombre{
+                margin-top: 10px;
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: lighter;
+                font-size: 1.2rem;
+            }
+
+            .colorCeleste{
+                font-size: 0.8rem;
+                background-color: rgb(23, 162, 183);
+                color: white;
+                border-radius: 5px;
+                padding: 5px;
+                align-content: center;
+            }
+            
+            .colorAmarillo{
+                font-size: 0.8rem;
+                color: black;
+                background-color: rgb(254, 193, 6);
+                border-radius: 5px;
+                padding: 5px;
+                align-content: center;
+            }
+            
+            .colorgris{
+                font-size: 0.8rem;
+                background-color: rgb(108, 117, 126);
+                color: white;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            
+            .colorRojo{
+                font-size: 0.8rem;
+                background-color: rgb(220, 53, 70);
+                color: white;
+                border-radius: 5px;
+                padding: 5px;
+            }             
+        }
+    }
+}
+
+.division{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 60vh;
+    gap: 1px;
+
+    .div_1{
+        height: 100%;
+        width: 50%;
+        background-image: url("../assets/img/honolulu.jpg");
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        }
+    }
+
+    .div_2{
+        width: 50%;
+        padding: 10px;
+        background-color: rgb(53, 58, 64);  
+        color: white;
+        font-family: 'Noto Sans Shavian', sans-serif;
+
+        .div_2_h2{
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .div_2_p{
+            font-weight: 200;
+            font-size: 0.8rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .div_2_a{
+            font-weight: 200;
+            font-size: 0.8rem;
+            color: white;
+            text-decoration: none;
+            border:solid thin white;
+            border-radius: 5px;
+            padding: 8px 10px;
+        }
+    }
+
+.section_form{
+    font-family: 'Noto Sans Shavian';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;   
+
+    .section_form_h2{
+        font-size: 1.5rem;
+
+        .section_form_h2_chico{
+            font-size:  0.7rem;
+        }
+    }
+
+    .section_form_p{
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+        font-weight:normal;
+    }
+
+    .section_form_p_gris{
+        font-size: 0.6rem;
+        color: gray;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .section_form_formulario{
+
+        width: 50%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+
+        .section_form_formulario_div1{
+
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap:20px;
+
+            .nombre{
+                width: 50%;                
+            }
+
+            .apellido{
+                width: 50%;                
+            }            
+        }
+
+        .section_form_formulario__div2{
+            width: 100%;
+            .section_form_formulario__div2_comentario{
+                
+                width: 100%;
+                height: 6rem;
+                border-color: gray;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-top: 10px;
+                font-size: 1.0rem;
+            }
+        }
+
+        .section_form_formulario_div3{
+
+            width: 100%;
+
+            .section_form_formulario_div3_boton{
+                width: 100%;
+                height: 2.2rem;
+                margin-top: 10px;
+                color: white;
+                background-color: rgb(150, 201, 62);
+                border-radius: 5px;
+                border: none;
+            }
+        }
+    }
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    border-style:solid;
+}
+
+footer{
+    height: 15vh;
+    background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);    
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .listaFooter{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: space-evenly;
+        align-items:center;
+
+        .listaFooter_li{
+            list-style: none;
+            width: 90px;
+
+            .linkFooter{
+                text-decoration: none;                
+                color: white;
+                font-family: 'Noto Sans Shavian', sans-serif;
+            
+            }
+        }
+    }    
+}
