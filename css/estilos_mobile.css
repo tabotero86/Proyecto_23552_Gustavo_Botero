@@ -11,7 +11,7 @@
     header{
         .header_section1{
         
-            height: 40vh;
+            height: 50%;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -49,7 +49,8 @@
                         .header_section1_div_nav_ul_li{
                             list-style: none;
                             text-align: center;
-                            font-size: 1rem;                 
+                            font-size: 1rem; 
+                            margin: 10px;                
     
                             .linkNav{
                                 text-decoration: none;
@@ -73,7 +74,7 @@
         }
     }
     .header_section2{
-        height: 55vh;
+        height: 60%;
         width: 100%;
         background-image: linear-gradient(to right, #00000097,#00000097), url("../assets/img/ba1.jpg");
         background-size:cover;
@@ -289,8 +290,9 @@
     
         .section_form_p{
             font-size: 0.7rem;
-            margin-bottom: 10px;
+            margin: 10px;
             font-weight:normal;
+            text-align: justify;
         }
     
         .section_form_p_gris{
@@ -369,7 +371,7 @@
     }
     footer{
         margin-top: 20px;
-        height: 30vh;
+        height: 40%;
         background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);    
         display: flex;
         flex-direction: column;
@@ -388,6 +390,7 @@
             .listaFooter_li{
                 list-style: none;
                 width: 100%;
+                margin: 10px;
     
                 .linkFooter{
                     text-decoration: none;                
