@@ -1,41 +1,81 @@
-<!DOCTYPE html><!-- esto es un comentario , para grabar en visual ctrl+S  -->
-<html lang="es">
-    <!--head: configuraciones para el navegador-->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proyecto integrador Front | Gustavo Botero</title>
-        <!--favicon-->
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    </head>
-    <!--dentro del body van a ir las etiquetas que el usuario va a poder ver en la pagina web-->
-    <body>
-        <header>
-            <a href="../index.html">   
-                <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0">
-            </a>
-            <h2>Conf Bs As</h2>
-            <nav>
-                <ul>
-                    <li><a href="../index.html#conferencia">La conferencia</a></li>
-                    <li><a href="../index.html#oradores">Los oradores</a></li>
-                    <li><a href="../index.html#lugarFecha">El lugar y la fecha</a></li>
-                    <li><a href="../index.html#formularioOrador">Conviertete en orador</a></li>
-                    <li><a href="#">Comprar tickets</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador Front | Gustavo Botero </title>
+    
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos_bootstraps.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="120px" loading="lazy">
+              </a>
+              <h2 class="h2-header">Conf Bs As</h2>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Conviertete en orador</a>
+                  </li>    
+                  <li class="nav-item">
+                    <a class="nav-link ancla-verde" href="../index.html">Comprar Tickets</a>
+                  </li>                
+                </ul>
+              </div>
+            </div>
+          </nav>        
+    </header>
+    <main class="container">
+        <h1 class="img-header-h1">NOT FOUND 404</h1>
+        <P>ERROR!</P>
+    </main>    
+    <footer class="container-fluid footer">
+        <div class="row mt-3 h-100 align-items-center">
+            <nav  class="navbar navbar-expand-lg">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link text-white w-60 col" href="../pages/404.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white w-60 col" href="../pages/404.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white w-60 col"  href="../pages/404.html">Prensa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white w-60 col"  href="../pages/404.html">Conferencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white w-60 col"  href="../pages/404.html">Términos y condiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white w-60 col"  href="../pages/404.html">Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white w-60 col"  href="../pages/404.html">Estudiantes</a>
+                    </li>
                 </ul>
             </nav>
-          
-        </header>
+        </div>
         
-         <main>
-            <h1>404 NOT FOUND</h1>
-            <p>ERROR!</p>
-         </main>
-      
-       
-        <footer>
-            
-        </footer>
-        
-    </body>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
