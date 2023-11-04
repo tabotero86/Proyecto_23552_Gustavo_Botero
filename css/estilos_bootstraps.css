@@ -16,10 +16,6 @@
     font-size: 1.5rem;
 }
 
-.navbar-dark .navbar-nav .nav-link.ancla-verde{
-    color: rgb(37, 163, 66);
-}
-
 .img-header{
         height: 700px;
         background-image: linear-gradient(to right, #00000097,#00000097), url("../assets/img/ba1.jpg");
@@ -47,6 +43,10 @@
     border:solid thin white;
     border-radius: 5px;
     padding: 8px 12px;
+}
+
+.navbar-dark .navbar-nav .nav-link.ancla-verde{
+    color: rgb(37, 163, 66);
 }
 
 .botonConf_verde{
@@ -153,6 +153,18 @@
 
 .div-404{
     height: 54vh;
+}
+
+.sec_comprar{
+    width: 66%;
+}
+
+.card:hover {
+    border-width: 4px;
+}
+
+form{
+    width: 66%;
 }
 
 footer{
