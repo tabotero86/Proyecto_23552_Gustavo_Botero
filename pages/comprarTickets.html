@@ -19,16 +19,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">La conferencia</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html#conferencia">La conferencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Los oradores</a>
+                    <a class="nav-link" href="../index.html#oradores">Los oradores</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../index.html">El lugar y la fecha</a>
+                    <a class="nav-link" href="../index.html#el lugar y la fecha">El lugar y la fecha</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Conviertete en orador</a>
+                    <a class="nav-link" href="../index.html#conviertete en orador">Conviertete en orador</a>
                   </li>    
                   <li class="nav-item">
                     <a class="nav-link ancla-verde botonConf_verde text-white" href="#">Comprar Tickets</a>
@@ -38,21 +38,90 @@
             </div>
           </nav>        
     </header>
-    <main>
-        <section>
-            <div class="container">
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-
+    <main class="sec_comprar centrado">
+        <section class="row mt-4 justify-content-evenly">
+          <div class="card border-info mb-3 py-4" style="max-width: 18rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Estudiante</h5>
+              <p class="card-text">Tienen un descuento</p>
+              <h5 class="card-text">80%</h5>
+              <p class="text-muted">*presentar documentación</p>
             </div>
-        </section>
+          </div>
+          <div class="card border-info mb-3 py-4" style="max-width: 18rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Trainee</h5>
+              <p class="card-text">Tienen un descuento</p>
+              <h5 class="card-text">50%</h5>
+              <p class="text-muted">*presentar documentación</p>
+            </div>
+          </div>
+          <div class="card border-warning mb-3 py-4" style="max-width: 18rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Junior</h5>
+              <p class="card-text">Tienen un descuento</p>
+              <h5 class="card-text">15%</h5>
+              <p class="text-muted">*presentar documentación</p>
+            </div>
+          </div>
+        </section>        
+        <h5 class="text-center">VENTA</h5>
+        <h2 class="titulo-gral text-center">VALOR DEL TICKET $200</h2>  
+        <form action="" class="w-100">
+          <div class="row my-4">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" required>
+            </div>
+            <div id="mensajeErrorNombre" class="invalid-feedback">
+              Ingrese un nombre valido.
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
+            </div>
+            <div id="mensajeErrorApellido" class="invalid-feedback">
+              Ingrese un apellido valido.
+            </div>
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electrónico" id="mail" required>
+          </div>
+          <div id="mensajeErrorEmail" class="invalid-feedback">
+            Ingrese un correo electrónico valido.
+          </div>
+          <div class="row my-4">
+            <div class="col">
+              <label for="Cantidad" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" min="1" required">
+              <div id="mensajeErrorCantidad" class="invalid-feedback">
+                Ingrese una cantidad valida.
+              </div>
+            </div>
+            <div class="col">
+              <label for="Categoría" class="form-label">Categoría</label>
+              <select class="col form-select" aria-label="Selección de categoría" id="categoriaSelect" required>              
+                <option selected>--Seleccione--</option>
+                <option value="0">Sin Categoría</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+              </select>
+              <div id="mensajeErrorCategoria" class="invalid-feedback">
+                Ingrese una categoría valida.
+              </div>
+            </div>       
+           </div>
+           <div class="col">
+            <textarea class="form-control fs-5" id="areaResultado" placeholder="Total a pagar: $" readonly></textarea>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="boton_enviar w-100 my-4" type="submit" value="Borrar">
+            </div>
+            <div class="col">
+              <input class="boton_enviar w-100 my-4" type="submit" value="Resumen">
+            </div>
+          </div>
+        </form>      
     </main>    
     <footer class="container-fluid footer">
         <div class="row mt-3 h-100 align-items-center">
