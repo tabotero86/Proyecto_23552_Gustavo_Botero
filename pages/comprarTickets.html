@@ -31,7 +31,7 @@
                     <a class="nav-link" href="../index.html#conviertete en orador">Conviertete en orador</a>
                   </li>    
                   <li class="nav-item">
-                    <a class="nav-link ancla-verde botonConf_verde text-white" href="#">Comprar Tickets</a>
+                    <a class="nav-link botonConf_verde text-white" href="#">Comprar Tickets</a>
                   </li>                
                 </ul>
               </div>
@@ -72,53 +72,38 @@
             <div class="col">
               <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" required>
             </div>
-            <div id="mensajeErrorNombre" class="invalid-feedback">
-              Ingrese un nombre valido.
-            </div>
             <div class="col">
               <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
-            </div>
-            <div id="mensajeErrorApellido" class="invalid-feedback">
-              Ingrese un apellido valido.
             </div>
           </div>
           <div class="col">
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electrónico" id="mail" required>
           </div>
-          <div id="mensajeErrorEmail" class="invalid-feedback">
-            Ingrese un correo electrónico valido.
-          </div>
           <div class="row my-4">
             <div class="col">
-              <label for="Cantidad" class="form-label">Cantidad</label>
-              <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" min="1" required">
-              <div id="mensajeErrorCantidad" class="invalid-feedback">
-                Ingrese una cantidad valida.
-              </div>
+              <label for="cantidad" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidad" value="1" min="1" required">
             </div>
             <div class="col">
-              <label for="Categoría" class="form-label">Categoría</label>
-              <select class="col form-select" aria-label="Selección de categoría" id="categoriaSelect" required>              
-                <option selected>--Seleccione--</option>
+              <label for="categoria" class="form-label">Categoría</label>
+              <select class="col form-select" aria-label="Selección de categoría" id="categoria" required>              
+                <option selected></option>
                 <option value="0">Sin Categoría</option>
                 <option value="1">Estudiante</option>
                 <option value="2">Trainee</option>
                 <option value="3">Junior</option>
-              </select>
-              <div id="mensajeErrorCategoria" class="invalid-feedback">
-                Ingrese una categoría valida.
-              </div>
+              </select>              
             </div>       
            </div>
            <div class="col">
-            <textarea class="form-control fs-5" id="areaResultado" placeholder="Total a pagar: $" readonly></textarea>
+            <input class="form-control fs-5" id="areaResultado" placeholder="Total a pagar: $" readonly></input>
           </div>
           <div class="row">
             <div class="col">
-              <input class="boton_enviar w-100 my-4" type="submit" value="Borrar">
+              <input class="boton_enviar w-100 my-4" type="submit" value="Borrar" id="btnBorrar">
             </div>
             <div class="col">
-              <input class="boton_enviar w-100 my-4" type="submit" value="Resumen">
+              <input class="boton_enviar w-100 my-4" type="submit" value="Resumen" id="btnResumen">
             </div>
           </div>
         </form>      
@@ -154,5 +139,6 @@
         
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/comprarTickets.js"></script>
 </body>
 </html>

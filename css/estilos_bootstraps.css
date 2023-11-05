@@ -58,6 +58,10 @@
     margin-right: 12px;
 }
 
+.navbar-nav{
+    align-items: center;
+}
+
 .h2-chica{
     margin-top: 20px;
     font-size: 0.9rem;
@@ -162,6 +166,7 @@
 .card:hover {
     border-width: 4px;
 }
+
 
 form{
     width: 66%;
