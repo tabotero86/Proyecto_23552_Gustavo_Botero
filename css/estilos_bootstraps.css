@@ -167,6 +167,9 @@
     border-width: 4px;
 }
 
+.mostrarError{
+    display: block;
+}
 
 form{
     width: 66%;

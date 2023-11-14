@@ -71,39 +71,54 @@
           <div class="row my-4">
             <div class="col">
               <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" required>
+              <div class="invalid-feedback" id="errorNombre">
+                <p>Ingrese su nombre</p>
+              </div>
             </div>
             <div class="col">
               <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
+              <div class="invalid-feedback" id="errorApellido">
+                <p>Ingrese su apellido</p>
+              </div>
             </div>
           </div>
           <div class="col">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electrónico" id="mail" required>
+            <input type="email" class="form-control" placeholder="Correo Electrónico" id="mail" required>
+            <div class="invalid-feedback" id="errorMail">
+              <p>Ingrese un e-mail y valido</p>
+            </div>
           </div>
           <div class="row my-4">
             <div class="col">
-              <label for="cantidad" class="form-label">Cantidad</label>
-              <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidad" value="1" min="1" required">
+              <label for="cantidadTkts" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTkts" value="1" min="1" required">
+              <div class="invalid-feedback" id="errorCantTkts">
+                <p>Ingrese cantidad de tickets</p>
+            </div>
             </div>
             <div class="col">
               <label for="categoria" class="form-label">Categoría</label>
               <select class="col form-select" aria-label="Selección de categoría" id="categoria" required>              
-                <option selected></option>
+                <option value="" selected>--Seleccione--</option>
                 <option value="0">Sin Categoría</option>
                 <option value="1">Estudiante</option>
                 <option value="2">Trainee</option>
                 <option value="3">Junior</option>
-              </select>              
+              </select> 
+              <div class="invalid-feedback" id="errorCategoria">
+                <p>Ingrese una categoria</p>
+            </div>             
             </div>       
            </div>
-           <div class="col">
-            <input class="form-control fs-5" id="areaResultado" placeholder="Total a pagar: $" readonly></input>
-          </div>
+           <div class="alert alert-primary mt-2 mb-4 text-start precio" role="alert">
+            Total a pagar: $ <span id="totalPago" class="text-start"></span>
+            </div>
           <div class="row">
             <div class="col">
-              <input class="boton_enviar w-100 my-4" type="submit" value="Borrar" id="btnBorrar">
+              <button type="reset" class="btn botonFormulario w-100 boton_enviar" id="botonBorrar">Borrar</button>
             </div>
             <div class="col">
-              <input class="boton_enviar w-100 my-4" type="submit" value="Resumen" id="btnResumen">
+              <button type="button" class="btn botonFormulario w-100 boton_enviar" id="botonResumen">Resumen</button>
             </div>
           </div>
         </form>      
